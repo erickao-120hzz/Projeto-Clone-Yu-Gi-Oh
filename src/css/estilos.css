@@ -1,0 +1,209 @@
+body {
+    font-family: 'Yugioh', serif;
+    background-image: url(../imagens/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 30px;
+
+}
+
+.cabecalho {
+    color: #f1ecff;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho .titulo {
+    color: #ED3261
+}
+
+.cartao {
+    opacity: 0;
+    display: none;
+    flex-direction: column;
+    padding: 12px;
+    gap: 5px;
+}
+
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+    display: block;
+}
+
+.lista-personagens {
+    background: radial-gradient(circle, #ED3261, #21011A, #E01212);
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+    padding: 12px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+
+.cartao .nome {
+    font-size: 13px;
+    padding: 5px;
+    text-transform: uppercase;
+    background: radial-gradient(circle, #f0c2d6, #b87a9a, #4a1f36);
+    border: 2px solid #e67c52;
+    border-radius: 4px;
+}
+
+.cartao .estrela {
+    width: 20px;
+    height: 20px;
+    background-image: url(../imagens/nivel-carta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.cartao .nível-carta {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    gap: 5px;
+}
+
+.cartao .imagem-carta {
+    max-width: 260px;
+    align-self: center;
+}
+
+.cartao .informacoes {
+    border-radius: 5px;
+    max-width: 300px;
+    color: #000000;
+    background: radial-gradient(circle, #f0c2d6, #b87a9a, #4a1f36);
+    border: 2px solid #000000;
+    text-align: left;
+    line-height: 1.5;
+    padding: 5px;
+}
+
+.cartao .informacoes .informacoes-ataque {
+    background: radial-gradient(circle, #f0c2d6, #b87a9a, #4a1f36);
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 10px;
+}
+
+.cartao .informacoes .informacoes-ataque span {
+    font-size: 13px;
+}
+
+.cartao .informacoes .descricao {
+    border-bottom: 1px solid #000000;
+    padding: 10px;
+    max-height: 72px;
+    overflow-y: scroll;
+    font-size: 13px;
+}
+
+.fundo-1 {
+    background: url(../imagens/fundo-1.jpg) no-repeat;
+}
+
+.fundo-2 {
+    background: url(../imagens/fundo-2.jpg) no-repeat;
+}
+
+.fundo-3 {
+    background: url(../imagens/fundo-3.jpg) no-repeat;
+}
+
+.fundo-4 {
+    background: url(../imagens/fundo-4.jpg) no-repeat;
+}
+
+.fundo-5 {
+    background: url(../imagens/fundo-5.jpg) no-repeat;
+}
+
+.fundo-6 {
+    background: url(../imagens/fundo-6.jpg) no-repeat;
+}
+
+.fundo-7 {
+    background: url(../imagens/fundo-7.jpg) no-repeat;
+}
+
+.btn-seta {
+    background-color: #b87a9a;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+
+}
+
+.btn-seta:hover {
+    background-color: #8351fe;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #c05798;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c05798;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c05783;
+}
+
+.carta-virada {
+    display: none;
+
+}
+
+.carta-virada.mostrar-fundo-carta {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../imagens/fundo-carta.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.cartao.virar {
+    transform: rotateZ(90deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.esconder {
+    display: none;
+}
