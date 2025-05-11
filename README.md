@@ -1,3 +1,5 @@
+<img src="assets/capa.jpg" alt="Capa do repositório" width="100%" height="auto"/>
+
 # Projeto Yu-Gi-Oh - Galeria de Cartas
 
 Este projeto é uma galeria interativa de cartas inspirada no universo Yu-Gi-Oh! Nele, você pode navegar entre diferentes cartas e visualizar seus detalhes como nome, nível, descrição, ataque e defesa.
