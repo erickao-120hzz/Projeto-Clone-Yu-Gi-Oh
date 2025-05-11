@@ -1,4 +1,3 @@
-<img src="assets/capa.jpg" alt="Capa do repositório" width="100%" height="auto"/>
 
 # Projeto Yu-Gi-Oh - Galeria de Cartas
 
